@@ -1,0 +1,39 @@
+java basics : 
+
+1.class definition:
+
+public class program1 {
+    public static void main(String[] args) {
+        System.out.println("hello world");
+    }
+}
+
+2. main Method:
+
+In the Java programming language, every application must contain a main method as it is the entry point of the application:
+
+public static void main(String[] args)
+public: Allows JVM to access the method from anywhere.
+static: Method can run without creating an object.
+void: It doesn’t return any value.
+String[] args: Accepts command-line arguments. when run the class that time passing value handle by the main method paramater
+    example: class name Program1
+             javac Program1
+             java Program1 Kishore kumar
+             kishore -- args[0]
+             kumar -- args[1]
+public class program1 {
+    public static void main(String[] args) {
+        System.out.println(args[0]);
+    }
+}
+o/p:kishore
+
+3. System.out.println():
+    This prints output to the console.
+
+    System.out.println("Hello, World");
+
+        System: Built-in class from java.lang package.
+        out: Static member (PrintStream object) of System.
+        println(): Method that prints to console and moves to the next line.
